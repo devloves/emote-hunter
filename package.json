@@ -1,0 +1,16 @@
+{
+  "name": "emote-hunter",
+  "version": "1.0.0",
+  "description": "Emote Listing from Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Winter#6623",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

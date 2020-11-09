@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+<div class="m-5">
+        <div class="row">
+<% bot.guilds.cache.forEach(m => { %>
+    <% m.emojis.cache.map(e => { %>
+        <div class="col m-3">
+            <div class="card shadow-lg text-white" style="background: #2C2F33;width: 400px;">
+                <div class="card-body">
+                    <div class="row pt-2 pl-4 mb-2">
+                        <div class="mr-4">
+                            <img class="rounded" style="height: auto;width: 90px;" src=<%= `https://cdn.discordapp.com/emojis/${e.id}` %> alt="...">
+                        </div>
+                        <div class="col">
+                            <h5 class="card-title"><%= `:${e.name}:` %></h5>                            
+                            <div class="bg-dark pl-2 rounded" style="line-height: 2;">
+                                <span class="p-2"><strong class="mr-1">From: </strong><img class="rounded-circle" style="height: auto;width: 20px;" src=<%= `https://cdn.discordapp.com/icons/${e.guild.id}/${e.guild.icon}.png` %> alt="..."> <%= e.guild.name %></span>
+                            <br>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-secondary mr-2" href=<%= `https://cdn.discordapp.com/emojis/${e.id}` %>><i class="fa fa-inbox mr-2"></i>  Download</a>
+                    <span class="btn btn-dark disabled"><i class="fa fa-info mr-2"></i>Added <%= e.createdAt.toString().slice(0, 15); %></span>
+                </div>
+            </div>
+        </div>    
+    <% }) %>
+<% }) %>
+</div>
+</div>
+</body>
+</html>
