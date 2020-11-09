@@ -4,4 +4,4 @@
 
 ![screenshot2](https://media.discordapp.net/attachments/770199382003548172/775353146653933578/unknown.png)
 
-this is a discord bot that syncs up with the emojis of the server it joins and shows into the webpage so other ppl can use it :D
+### this is a discord bot that syncs up with the emojis of the server it joins and shows into the webpage so other ppl can use it :D
